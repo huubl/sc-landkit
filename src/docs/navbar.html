@@ -1,0 +1,1436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("../partials/head.html", {
+      "pageTitle": "Landkit"
+    })
+  </head>
+  <body class="bg-light" style="padding-top: 84px;">
+    
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("../partials/navbar.html", {
+      "classList": "navbar-light fixed-top bg-white border-bottom",
+      "type": "fluid"
+    })
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="d-lg-none bg-gray-800">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col">
+            
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <span class="text-white">
+                  Docs
+                </span>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <span class="text-white">
+                  Navbar
+                </span>
+              </li>
+            </ol>
+
+          </div>
+          <div class="col-auto">
+            
+            <!-- Toggler -->
+            <div class="navbar-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="overflow-hidden">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-3 col-xl-2 px-lg-0 border-bottom border-bottom-lg-0 border-right-lg border-gray-300 sidenav sidenav-left">
+            
+            @@include("../partials/sidenav.html")
+
+          </div>
+          <div class="col-12 col-lg-9 col-xl-10 offset-lg-3 offset-xl-2 py-7 py-lg-9 px-lg-7">
+
+            <!-- Heading -->
+            <h1 class="mb-1">Navbar</h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-gray-700">
+              Powerful and responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for the collapse plugin.
+            </p>
+
+            <!-- Bootstrap/Plugin Link -->
+            <p>
+              <a class="text-decoration-none" href="http://getbootstrap.com/docs/4.1/components/navbar/" target="_blank">
+                <i class="fe fe-external-link pr-1"></i>
+                Bootstrap documentation
+              </a>
+            </p>
+
+            <!-- Divider -->
+            <hr class="border-gray-300 my-6">
+
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+
+                <nav class="navbar navbar-light navbar-expand-lg border-bottom mb-3" style="z-index: 4;">
+
+                  <!-- Brand -->
+                  <a class="navbar-brand" href="index.html">
+                    <img src="../assets/img/brand.svg" class="navbar-brand-img" alt="...">
+                  </a>
+
+                  <!-- Toggler -->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <!-- Collapse -->
+                  <div class="collapse navbar-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLandingsExampleOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Landings
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg p-lg-0" aria-labelledby="navbarLandingsExampleOne">
+                          <div class="row mx-lg-0">
+                            <div class="col-12 col-lg-6 p-lg-7 d-none d-lg-flex flex-column justify-content-center overlay overlay-primary overlay-80 bg-cover rounded-left" style="background-image: url(@@webRoot/assets/img/photos/photo-3.jpg);">
+                              <div class="position-relative text-center text-white">
+
+                                <!-- Heading -->
+                                <h4 class="font-weight-bold mb-0">
+                                  Want to see an overview?
+                                </h4>
+
+                                <!-- Text -->
+                                <p class="font-size-sm">
+                                  See all the pages at once.
+                                </p>
+
+                                <!-- Button -->
+                                <a href="overview.html" class="btn btn-sm btn-white shadow-dark font-size-sm">
+                                  View all pages
+                                </a>
+                                
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6 p-lg-7">
+                              <div class="row no-gutters">
+                                <div class="col-6">
+
+                                  <!-- Heading -->
+                                  <h6 class="font-weight-bold text-uppercase text-primary">
+                                    Services
+                                  </h6>
+
+                                  <!-- List -->
+                                  <ul class="list mb-5">
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/coworking.html">
+                                        Coworking
+                                      </a>
+                                    </li>
+                                    <li class="list-item mb-1">
+                                      <a class="list-link" href="@@webRoot/rental.html">
+                                        Rental
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/job.html">
+                                        Job Listing
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                  <!-- Heading -->
+                                  <h6 class="font-weight-bold text-uppercase text-primary">
+                                    Apps
+                                  </h6>
+
+                                  <!-- List -->
+                                  <ul class="list mb-0">
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/desktop-app.html">
+                                        Desktop
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/mobile-app.html">
+                                        Mobile
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                </div>
+                                <div class="col-6">
+                                  
+                                  <!-- Heading -->
+                                  <h6 class="font-weight-bold text-uppercase text-primary">
+                                    Web 
+                                  </h6>
+
+                                  <!-- List -->
+                                  <ul class="list mb-0">
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/index.html">
+                                        Basic
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/enterprise.html">
+                                        Enterprise
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/service.html">
+                                        Service
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/cloud.html">
+                                        Cloud Hosting
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                </div>
+                              </div> <!-- / .row -->
+                            </div>
+                          </div> <!-- / .row -->
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarPagesExampleOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarPagesExampleOne">
+                          <div class="row no-gutters">
+                            <div class="col-6">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Career
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-5">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/careers.html">
+                                    Listing
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/career-single.html">
+                                    Opening
+                                  </a>
+                                </li>
+                              </ul>
+
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Company
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-0">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/about.html">
+                                    About
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/pricing.html">
+                                    Pricing
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/terms-of-service.html">
+                                    Terms
+                                  </a>
+                                </li>
+                              </ul>               
+
+                            </div>
+                            <div class="col-6">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Help center
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-5">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/help-center.html">
+                                    Overview
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/help-center-article.html">
+                                    Article
+                                  </a>
+                                </li>
+                              </ul>
+
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Contact
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-0">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/contact.html">
+                                    Basic
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/contact-alt.html">
+                                    Cover
+                                  </a>
+                                </li>
+                              </ul>               
+
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDocumentationExampleOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Documentation
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDocumentationExampleOne">
+
+                          <!-- Item -->
+                          <a class="d-flex align-items-center text-decoration-none" href="@@webRoot/docs/index.html">
+                              
+                            <!-- Icon -->
+                            <div class="icon icon-sm text-primary">
+                              @@include("../assets/img/icons/duotone-icons/General/Clipboard.svg")
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="ml-4">
+
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                                Documentation
+                              </h6>
+
+                              <!-- Text -->
+                              <p class="font-size-sm text-gray-700 mb-0">
+                                Customizing and building
+                              </p>
+
+                            </div>
+
+                          </a> <!-- / .row -->
+
+                          <!-- Divider -->
+                          <hr>
+                          
+                          <!-- Item -->
+                          <a class="d-flex align-items-center text-decoration-none" href="@@webRoot/docs/alerts.html">
+                              
+                            <!-- Icon -->
+                            <div class="icon icon-sm text-primary">
+                              @@include("../assets/img/icons/duotone-icons/Layout/Layout-4-blocks.svg")
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="ml-4">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                                Components
+                              </h6>
+
+                              <!-- Text -->
+                              <p class="font-size-sm text-gray-700 mb-0">
+                                Full list of components
+                              </p>
+
+                            </div>
+
+                          </a> <!-- / .row -->
+
+                          <!-- Divider -->
+                          <hr>
+                          
+                          <!-- Item -->
+                          <a class="d-flex align-items-center text-decoration-none" href="@@webRoot/docs/changelog.html">
+                              
+                            <!-- Icon -->
+                            <div class="icon icon-sm text-primary">
+                              @@include("../assets/img/icons/duotone-icons/Files/File.svg")
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="ml-4">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                                Changelog
+                              </h6>
+
+                              <!-- Text -->
+                              <p class="font-size-sm text-gray-700 mb-0">
+                                Keep track of changes
+                              </p>
+
+                            </div>
+                              
+                            <!-- Badge -->
+                            <span class="badge badge-pill badge-primary-soft ml-auto">
+                              1.0
+                            </span>
+
+                          </a> <!-- / .row -->
+
+                        </div>
+                      </li>
+                    </ul>
+
+                    <!-- Button -->
+                    <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="#!">
+                      Buy now
+                    </a>
+
+                  </div>
+                  
+                </nav>
+
+                <nav class="navbar navbar-light navbar-expand-lg border-bottom mb-3" style="z-index: 3;">
+
+                  <!-- Brand -->
+                  <a class="navbar-brand" href="index.html">
+                    <img src="../assets/img/brand.svg" class="navbar-brand-img" alt="...">
+                  </a>
+
+                  <!-- Toggler -->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <!-- Collapse -->
+                  <div class="collapse navbar-collapse">
+
+                    <!-- Search -->
+                    <form class="form-inline ml-auto">
+                      <input type="search" class="form-control form-control-sm" placeholder="Search">
+                    </form>
+
+                    <!-- Avatar -->
+                    <a href="#" class="avatar avatar-online ml-5" data-toggle="dropdown">
+                      <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                    </a>
+
+                  </div>
+                  
+                </nav>
+
+                <nav class="navbar navbar-light navbar-expand-lg border-bottom mb-3" style="z-index: 2;">
+
+                  <!-- Brand -->
+                  <a class="navbar-brand" href="index.html">
+                    <img src="../assets/img/brand.svg" class="navbar-brand-img" alt="...">
+                  </a>
+
+                  <!-- Toggler -->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <!-- Collapse -->
+                  <div class="collapse navbar-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLandingsExampleThree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Landings
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg p-lg-0" aria-labelledby="navbarLandingsExampleThree">
+                          <div class="row mx-lg-0">
+                            <div class="col-12 col-lg-6 p-lg-7 d-none d-lg-flex flex-column justify-content-center overlay overlay-primary overlay-80 bg-cover rounded-left" style="background-image: url(@@webRoot/assets/img/photos/photo-3.jpg);">
+                              <div class="position-relative text-center text-white">
+
+                                <!-- Heading -->
+                                <h4 class="font-weight-bold mb-0">
+                                  Want to see an overview?
+                                </h4>
+
+                                <!-- Text -->
+                                <p class="font-size-sm">
+                                  See all the pages at once.
+                                </p>
+
+                                <!-- Button -->
+                                <a href="overview.html" class="btn btn-sm btn-white shadow-dark font-size-sm">
+                                  View all pages
+                                </a>
+                                
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6 p-lg-7">
+                              <div class="row no-gutters">
+                                <div class="col-6">
+
+                                  <!-- Heading -->
+                                  <h6 class="font-weight-bold text-uppercase text-primary">
+                                    Services
+                                  </h6>
+
+                                  <!-- List -->
+                                  <ul class="list mb-5">
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/coworking.html">
+                                        Coworking
+                                      </a>
+                                    </li>
+                                    <li class="list-item mb-1">
+                                      <a class="list-link" href="@@webRoot/rental.html">
+                                        Rental
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/job.html">
+                                        Job Listing
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                  <!-- Heading -->
+                                  <h6 class="font-weight-bold text-uppercase text-primary">
+                                    Apps
+                                  </h6>
+
+                                  <!-- List -->
+                                  <ul class="list mb-0">
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/desktop-app.html">
+                                        Desktop
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/mobile-app.html">
+                                        Mobile
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                </div>
+                                <div class="col-6">
+                                  
+                                  <!-- Heading -->
+                                  <h6 class="font-weight-bold text-uppercase text-primary">
+                                    Web 
+                                  </h6>
+
+                                  <!-- List -->
+                                  <ul class="list mb-0">
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/index.html">
+                                        Basic
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/enterprise.html">
+                                        Enterprise
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/service.html">
+                                        Service
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/cloud.html">
+                                        Cloud Hosting
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                </div>
+                              </div> <!-- / .row -->
+                            </div>
+                          </div> <!-- / .row -->
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarPagesExampleThree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarPagesExampleThree">
+                          <div class="row no-gutters">
+                            <div class="col-6">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Career
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-5">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/careers.html">
+                                    Listing
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/career-single.html">
+                                    Opening
+                                  </a>
+                                </li>
+                              </ul>
+
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Company
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-0">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/about.html">
+                                    About
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/pricing.html">
+                                    Pricing
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/terms-of-service.html">
+                                    Terms
+                                  </a>
+                                </li>
+                              </ul>               
+
+                            </div>
+                            <div class="col-6">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Help center
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-5">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/help-center.html">
+                                    Overview
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/help-center-article.html">
+                                    Article
+                                  </a>
+                                </li>
+                              </ul>
+
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Contact
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-0">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/contact.html">
+                                    Basic
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/contact-alt.html">
+                                    Cover
+                                  </a>
+                                </li>
+                              </ul>               
+
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDocumentationExampleThree" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Documentation
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDocumentationExampleThree">
+
+                          <!-- Item -->
+                          <a class="d-flex align-items-center text-decoration-none" href="@@webRoot/docs/index.html">
+                              
+                            <!-- Icon -->
+                            <div class="icon icon-sm text-primary">
+                              @@include("../assets/img/icons/duotone-icons/General/Clipboard.svg")
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="ml-4">
+
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                                Documentation
+                              </h6>
+
+                              <!-- Text -->
+                              <p class="font-size-sm text-gray-700 mb-0">
+                                Customizing and building
+                              </p>
+
+                            </div>
+
+                          </a> <!-- / .row -->
+
+                          <!-- Divider -->
+                          <hr>
+                          
+                          <!-- Item -->
+                          <a class="d-flex align-items-center text-decoration-none" href="@@webRoot/docs/alerts.html">
+                              
+                            <!-- Icon -->
+                            <div class="icon icon-sm text-primary">
+                              @@include("../assets/img/icons/duotone-icons/Layout/Layout-4-blocks.svg")
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="ml-4">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                                Components
+                              </h6>
+
+                              <!-- Text -->
+                              <p class="font-size-sm text-gray-700 mb-0">
+                                Full list of components
+                              </p>
+
+                            </div>
+
+                          </a> <!-- / .row -->
+
+                          <!-- Divider -->
+                          <hr>
+                          
+                          <!-- Item -->
+                          <a class="d-flex align-items-center text-decoration-none" href="@@webRoot/docs/changelog.html">
+                              
+                            <!-- Icon -->
+                            <div class="icon icon-sm text-primary">
+                              @@include("../assets/img/icons/duotone-icons/Files/File.svg")
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="ml-4">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                                Changelog
+                              </h6>
+
+                              <!-- Text -->
+                              <p class="font-size-sm text-gray-700 mb-0">
+                                Keep track of changes
+                              </p>
+
+                            </div>
+                              
+                            <!-- Badge -->
+                            <span class="badge badge-pill badge-primary-soft ml-auto">
+                              1.0
+                            </span>
+
+                          </a> <!-- / .row -->
+
+                        </div>
+                      </li>
+                    </ul>
+
+                  </div>
+                  
+                </nav>
+
+                <nav class="navbar navbar-light navbar-expand-lg mb-3" style="z-index: 1;">
+
+                  <!-- Brand -->
+                  <a class="navbar-brand" href="index.html">
+                    <img src="../assets/img/brand.svg" class="navbar-brand-img" alt="...">
+                  </a>
+
+                  <!-- Toggler -->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <!-- Collapse -->
+                  <div class="collapse navbar-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLandingsExampleFour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Landings
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg p-lg-0" aria-labelledby="navbarLandingsExampleFour">
+                          <div class="row mx-lg-0">
+                            <div class="col-12 col-lg-6 p-lg-7 d-none d-lg-flex flex-column justify-content-center overlay overlay-primary overlay-80 bg-cover rounded-left" style="background-image: url(@@webRoot/assets/img/photos/photo-3.jpg);">
+                              <div class="position-relative text-center text-white">
+
+                                <!-- Heading -->
+                                <h4 class="font-weight-bold mb-0">
+                                  Want to see an overview?
+                                </h4>
+
+                                <!-- Text -->
+                                <p class="font-size-sm">
+                                  See all the pages at once.
+                                </p>
+
+                                <!-- Button -->
+                                <a href="overview.html" class="btn btn-sm btn-white shadow-dark font-size-sm">
+                                  View all pages
+                                </a>
+                                
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6 p-lg-7">
+                              <div class="row no-gutters">
+                                <div class="col-6">
+
+                                  <!-- Heading -->
+                                  <h6 class="font-weight-bold text-uppercase text-primary">
+                                    Services
+                                  </h6>
+
+                                  <!-- List -->
+                                  <ul class="list mb-5">
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/coworking.html">
+                                        Coworking
+                                      </a>
+                                    </li>
+                                    <li class="list-item mb-1">
+                                      <a class="list-link" href="@@webRoot/rental.html">
+                                        Rental
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/job.html">
+                                        Job Listing
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                  <!-- Heading -->
+                                  <h6 class="font-weight-bold text-uppercase text-primary">
+                                    Apps
+                                  </h6>
+
+                                  <!-- List -->
+                                  <ul class="list mb-0">
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/desktop-app.html">
+                                        Desktop
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/mobile-app.html">
+                                        Mobile
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                </div>
+                                <div class="col-6">
+                                  
+                                  <!-- Heading -->
+                                  <h6 class="font-weight-bold text-uppercase text-primary">
+                                    Web 
+                                  </h6>
+
+                                  <!-- List -->
+                                  <ul class="list mb-0">
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/index.html">
+                                        Basic
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/enterprise.html">
+                                        Enterprise
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/service.html">
+                                        Service
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/cloud.html">
+                                        Cloud Hosting
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                </div>
+                              </div> <!-- / .row -->
+                            </div>
+                          </div> <!-- / .row -->
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarPagesExampleFour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarPagesExampleFour">
+                          <div class="row no-gutters">
+                            <div class="col-6">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Career
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-5">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/careers.html">
+                                    Listing
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/career-single.html">
+                                    Opening
+                                  </a>
+                                </li>
+                              </ul>
+
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Company
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-0">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/about.html">
+                                    About
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/pricing.html">
+                                    Pricing
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/terms-of-service.html">
+                                    Terms
+                                  </a>
+                                </li>
+                              </ul>               
+
+                            </div>
+                            <div class="col-6">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Help center
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-5">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/help-center.html">
+                                    Overview
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/help-center-article.html">
+                                    Article
+                                  </a>
+                                </li>
+                              </ul>
+
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Contact
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-0">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/contact.html">
+                                    Basic
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/contact-alt.html">
+                                    Cover
+                                  </a>
+                                </li>
+                              </ul>               
+
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDocumentationExampleFour" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Documentation
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDocumentationExampleFour">
+
+                          <!-- Item -->
+                          <a class="d-flex align-items-center text-decoration-none" href="@@webRoot/docs/index.html">
+                              
+                            <!-- Icon -->
+                            <div class="icon icon-sm text-primary">
+                              @@include("../assets/img/icons/duotone-icons/General/Clipboard.svg")
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="ml-4">
+
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                                Documentation
+                              </h6>
+
+                              <!-- Text -->
+                              <p class="font-size-sm text-gray-700 mb-0">
+                                Customizing and building
+                              </p>
+
+                            </div>
+
+                          </a> <!-- / .row -->
+
+                          <!-- Divider -->
+                          <hr>
+                          
+                          <!-- Item -->
+                          <a class="d-flex align-items-center text-decoration-none" href="@@webRoot/docs/alerts.html">
+                              
+                            <!-- Icon -->
+                            <div class="icon icon-sm text-primary">
+                              @@include("../assets/img/icons/duotone-icons/Layout/Layout-4-blocks.svg")
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="ml-4">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                                Components
+                              </h6>
+
+                              <!-- Text -->
+                              <p class="font-size-sm text-gray-700 mb-0">
+                                Full list of components
+                              </p>
+
+                            </div>
+
+                          </a> <!-- / .row -->
+
+                          <!-- Divider -->
+                          <hr>
+                          
+                          <!-- Item -->
+                          <a class="d-flex align-items-center text-decoration-none" href="@@webRoot/docs/changelog.html">
+                              
+                            <!-- Icon -->
+                            <div class="icon icon-sm text-primary">
+                              @@include("../assets/img/icons/duotone-icons/Files/File.svg")
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="ml-4">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                                Changelog
+                              </h6>
+
+                              <!-- Text -->
+                              <p class="font-size-sm text-gray-700 mb-0">
+                                Keep track of changes
+                              </p>
+
+                            </div>
+                              
+                            <!-- Badge -->
+                            <span class="badge badge-pill badge-primary-soft ml-auto">
+                              1.0
+                            </span>
+
+                          </a> <!-- / .row -->
+
+                        </div>
+                      </li>
+                    </ul>
+
+                  </div>
+                  
+                </nav>
+
+                <nav class="navbar navbar-dark bg-dark navbar-expand-lg" style="z-index: 0;">
+
+                  <!-- Brand -->
+                  <a class="navbar-brand" href="index.html">
+                    <img src="../assets/img/brand.svg" class="navbar-brand-img" alt="...">
+                  </a>
+
+                  <!-- Toggler -->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <!-- Collapse -->
+                  <div class="collapse navbar-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLandingsExampleFive" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Landings
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg p-lg-0" aria-labelledby="navbarLandingsExampleFive">
+                          <div class="row mx-lg-0">
+                            <div class="col-12 col-lg-6 p-lg-7 d-none d-lg-flex flex-column justify-content-center overlay overlay-primary overlay-80 bg-cover rounded-left" style="background-image: url(@@webRoot/assets/img/photos/photo-3.jpg);">
+                              <div class="position-relative text-center text-white">
+
+                                <!-- Heading -->
+                                <h4 class="font-weight-bold mb-0">
+                                  Want to see an overview?
+                                </h4>
+
+                                <!-- Text -->
+                                <p class="font-size-sm">
+                                  See all the pages at once.
+                                </p>
+
+                                <!-- Button -->
+                                <a href="overview.html" class="btn btn-sm btn-white shadow-dark font-size-sm">
+                                  View all pages
+                                </a>
+                                
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6 p-lg-7">
+                              <div class="row no-gutters">
+                                <div class="col-6">
+
+                                  <!-- Heading -->
+                                  <h6 class="font-weight-bold text-uppercase text-primary">
+                                    Services
+                                  </h6>
+
+                                  <!-- List -->
+                                  <ul class="list mb-5">
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/coworking.html">
+                                        Coworking
+                                      </a>
+                                    </li>
+                                    <li class="list-item mb-1">
+                                      <a class="list-link" href="@@webRoot/rental.html">
+                                        Rental
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/job.html">
+                                        Job Listing
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                  <!-- Heading -->
+                                  <h6 class="font-weight-bold text-uppercase text-primary">
+                                    Apps
+                                  </h6>
+
+                                  <!-- List -->
+                                  <ul class="list mb-0">
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/desktop-app.html">
+                                        Desktop
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/mobile-app.html">
+                                        Mobile
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                </div>
+                                <div class="col-6">
+                                  
+                                  <!-- Heading -->
+                                  <h6 class="font-weight-bold text-uppercase text-primary">
+                                    Web 
+                                  </h6>
+
+                                  <!-- List -->
+                                  <ul class="list mb-0">
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/index.html">
+                                        Basic
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/enterprise.html">
+                                        Enterprise
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/service.html">
+                                        Service
+                                      </a>
+                                    </li>
+                                    <li class="list-item">
+                                      <a class="list-link" href="@@webRoot/cloud.html">
+                                        Cloud Hosting
+                                      </a>
+                                    </li>
+                                  </ul>
+
+                                </div>
+                              </div> <!-- / .row -->
+                            </div>
+                          </div> <!-- / .row -->
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarPagesExampleFive" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarPagesExampleFive">
+                          <div class="row no-gutters">
+                            <div class="col-6">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Career
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-5">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/careers.html">
+                                    Listing
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/career-single.html">
+                                    Opening
+                                  </a>
+                                </li>
+                              </ul>
+
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Company
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-0">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/about.html">
+                                    About
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/pricing.html">
+                                    Pricing
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/terms-of-service.html">
+                                    Terms
+                                  </a>
+                                </li>
+                              </ul>               
+
+                            </div>
+                            <div class="col-6">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Help center
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-5">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/help-center.html">
+                                    Overview
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/help-center-article.html">
+                                    Article
+                                  </a>
+                                </li>
+                              </ul>
+
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary">
+                                Contact
+                              </h6>
+
+                              <!-- List -->
+                              <ul class="list mb-0">
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/contact.html">
+                                    Basic
+                                  </a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="list-link" href="@@webRoot/contact-alt.html">
+                                    Cover
+                                  </a>
+                                </li>
+                              </ul>               
+
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDocumentationExampleFive" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Documentation
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDocumentationExampleFive">
+
+                          <!-- Item -->
+                          <a class="d-flex align-items-center text-decoration-none" href="@@webRoot/docs/index.html">
+                              
+                            <!-- Icon -->
+                            <div class="icon icon-sm text-primary">
+                              @@include("../assets/img/icons/duotone-icons/General/Clipboard.svg")
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="ml-4">
+
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                                Documentation
+                              </h6>
+
+                              <!-- Text -->
+                              <p class="font-size-sm text-gray-700 mb-0">
+                                Customizing and building
+                              </p>
+
+                            </div>
+
+                          </a> <!-- / .row -->
+
+                          <!-- Divider -->
+                          <hr>
+                          
+                          <!-- Item -->
+                          <a class="d-flex align-items-center text-decoration-none" href="@@webRoot/docs/alerts.html">
+                              
+                            <!-- Icon -->
+                            <div class="icon icon-sm text-primary">
+                              @@include("../assets/img/icons/duotone-icons/Layout/Layout-4-blocks.svg")
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="ml-4">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                                Components
+                              </h6>
+
+                              <!-- Text -->
+                              <p class="font-size-sm text-gray-700 mb-0">
+                                Full list of components
+                              </p>
+
+                            </div>
+
+                          </a> <!-- / .row -->
+
+                          <!-- Divider -->
+                          <hr>
+                          
+                          <!-- Item -->
+                          <a class="d-flex align-items-center text-decoration-none" href="@@webRoot/docs/changelog.html">
+                              
+                            <!-- Icon -->
+                            <div class="icon icon-sm text-primary">
+                              @@include("../assets/img/icons/duotone-icons/Files/File.svg")
+                            </div>
+                            
+                            <!-- Content -->
+                            <div class="ml-4">
+                              
+                              <!-- Heading -->
+                              <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                                Changelog
+                              </h6>
+
+                              <!-- Text -->
+                              <p class="font-size-sm text-gray-700 mb-0">
+                                Keep track of changes
+                              </p>
+
+                            </div>
+                              
+                            <!-- Badge -->
+                            <span class="badge badge-pill badge-primary-soft ml-auto">
+                              1.0
+                            </span>
+
+                          </a> <!-- / .row -->
+
+                        </div>
+                      </li>
+                    </ul>
+
+                    <!-- Button -->
+                    <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="#!">
+                      Buy now
+                    </a>
+
+                  </div>
+                  
+                </nav>
+
+              </div>
+            </div>
+            
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("../partials/scripts.html")
+      
+  </body>
+</html>

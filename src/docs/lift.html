@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("../partials/head.html", {
+      "pageTitle": "Landkit"
+    })
+  </head>
+  <body class="bg-light" style="padding-top: 84px;">
+    
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("../partials/navbar.html", {
+      "classList": "navbar-light fixed-top bg-white border-bottom",
+      "type": "fluid"
+    })
+
+    <!-- BREADCRUMB
+    ================================================== -->
+    <nav class="d-lg-none bg-gray-800">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col">
+            
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <span class="text-white">
+                  Docs
+                </span>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <span class="text-white">
+                  Lift
+                </span>
+              </li>
+            </ol>
+
+          </div>
+          <div class="col-auto">
+            
+            <!-- Toggler -->
+            <div class="navbar-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-3 col-xl-2 px-lg-0 border-bottom border-bottom-lg-0 border-right-lg border-gray-300 sidenav sidenav-left">
+            
+            @@include("../partials/sidenav.html")
+
+          </div>
+          <div class="col-12 col-lg-6 col-xl-8 offset-lg-3 offset-xl-2 py-7 py-lg-9 px-lg-7">
+
+            <!-- Heading -->
+            <div class="d-flex align-items-center">
+              <h1 class="mb-1 mr-3">Lift</h1>
+              <span class="badge badge-pill badge-primary-soft mt-1">
+                <span class="h6 text-uppercase font-weight-bold">Landkit only</span>
+              </span>
+            </div>
+
+            <!-- Text -->
+            <p class="font-size-lg text-gray-700">
+              Visually lifts an element on hover and focus.
+            </p>
+
+            <!-- Divider -->
+            <hr class="border-gray-300 my-6">
+
+            <div class="row mb-5">
+              <div class="col-12 col-xl-4 d-flex">
+                
+                <!-- Card -->
+                <a class="card lift lift-lg text-reset text-decoration-none shadow-light-lg mb-6 mb-xl-0 overlay overlay-black overlay-30 bg-cover pt-13 pt-lg-0" style="background-image: url(../assets/img/photos/photo-8.jpg);" href="#!">
+
+                  <!-- Body -->
+                  <div class="position-relative card-body d-flex flex-column">
+
+                    <!-- Heading -->
+                    <h3 class="text-white mt-auto">
+                      Using Unsplash to improve your listing visibility
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="text-white mb-5">
+                      Using free stock photos of your surrounding areas can skyrocket your popularity.
+                    </p>
+
+                    <!-- Meta -->
+                    <div class="row pt-5 border-top border-white-20">
+                      <div class="col">
+                        
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-white-70 mb-0">
+                          Casey Fyfe
+                        </h6>
+
+                      </div>
+                      <div class="col-auto">
+                        
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-white-70 mb-0">
+                          <time datetime="2018-05-02">May 02</time>
+                        </p>
+
+                      </div>
+                    </div> <!-- / .row -->
+                    
+                  </div>
+                  
+                </a>
+
+              </div>
+              <div class="col-12 col-xl-4 d-flex">
+                
+                <!-- Card -->
+                <a class="card lift lift-lg text-reset text-decoration-none shadow-light-lg mb-6 mb-xl-0" href="#!">
+
+                  <!-- Image -->
+                  <img src="../assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
+
+                  <!-- Body -->
+                  <div class="card-body">
+
+                    <!-- Heading -->
+                    <h3>
+                      Photos should appeal to a sense of adventure
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-5">
+                      Cozy vibes are out and this summer you should focus on making customer's feel brave.
+                    </p>
+                    
+                    <!-- Meta -->
+                    <div class="row mt-auto pt-5 border-top">
+                      <div class="col">
+                        
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted mb-0">
+                          Danny Devito
+                        </h6>
+
+                      </div>
+                      <div class="col-auto">
+                        
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0">
+                          <time datetime="2018-05-02">May 02</time>
+                        </p>
+
+                      </div>
+                    </div> <!-- / .row -->
+                    
+                  </div>
+                </a>
+
+              </div>
+              <div class="col-12 col-xl-4 d-flex">
+                
+                <!-- Card -->
+                <a class="card lift lift-lg text-reset text-decoration-none shadow-light-lg" href="#">
+
+                  <!-- Body -->
+                  <div class="card-body d-flex flex-column">
+
+                    <!-- Heading -->
+                    <h3 class="mt-auto">
+                      It's the little touches that make memories.
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-5">
+                      Once you have your rental posted, you should focus on how you can differentiate your home with little touches. Chocolates, specialty coffee, fast wifi, nice toiletries, or a personal note. Small touches can make a huge difference.
+                    </p>
+
+                    <!-- Meta -->
+                    <div class="row mt-auto pt-5 border-top">
+                      <div class="col">
+                        
+                        <!-- Author -->
+                        <h6 class="text-uppercase text-muted mb-0">
+                          Dave Gamache
+                        </h6>
+
+                      </div>
+                      <div class="col-auto">
+                        
+                        <!-- Date -->
+                        <p class="h6 text-uppercase text-muted mb-0">
+                          <time datetime="2018-05-02">May 02</time>
+                        </p>
+
+                      </div>
+                    </div> <!-- / .row -->
+                    
+                  </div>
+
+                </a>
+
+              </div>
+            </div> <!-- / .row -->
+
+
+            <!-- Button -->
+            <a href="#!" class="btn btn-block btn-primary lift mb-5">
+              Lift Button
+            </a>
+
+            <!-- Card -->
+            <div class="card">
+              <div class="card-footer rounded bg-black">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;card&nbsp;lift&nbsp;lift-lg&quot;&gt;<br/>&nbsp;&nbsp;...<br/>&lt;/div&gt;<br/><br/>&lt;a&nbsp;href=&quot;#!&quot;&nbsp;class=&quot;btn&nbsp;btn-block&nbsp;btn-primary&nbsp;lift&quot;&gt;<br/>&nbsp;&nbsp;Lift Button<br/>&lt;/a&gt;
+                </code>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-12 col-lg-3 col-xl-2 d-none d-lg-block px-lg-0 sidenav sidenav-right"></div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("../partials/scripts.html")
+      
+  </body>
+</html>
